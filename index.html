@@ -155,7 +155,7 @@
       <img src="static/images/teaser_image.jpeg" alt="Project teaser image" style="width: 100%; height: auto; border-radius: 8px;">
     </figure>
     <h2 class="subtitle has-text-centered">
-    The current state-of-the-art method employs standard Mamba blocks for stochastic dense action anticipation. In contrast, we introduce the MixMamba block, where each block dynamically selects an appropriate $\textbf{A}$ matrix based on the input sequence.
+    The current state-of-the-art method employs standard Mamba blocks for stochastic dense action anticipation. In contrast, we introduce the MixMamba block, where each block dynamically selects an appropriate <b>A</b> matrix based on the input sequence.
     </h2>
     </div>
   </div>
@@ -171,7 +171,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present MixANT, a novel architecture for stochastic long-term dense anticipation of human activities. While recent State Space Models (SSMs) like Mamba have shown promise through input-dependent selectivity on three key parameters, the critical forget-gate ($\textbf{A}$ matrix) controlling temporal memory remains static. We address this limitation by introducing a mixture of experts approach that dynamically selects contextually relevant $\textbf{A}$ matrices based on input features, enhancing representational capacity without sacrificing computational efficiency. Extensive experiments on the 50Salads, Breakfast, and Assembly101 datasets demonstrate that MixANT consistently outperforms state-of-the-art methods across all evaluation settings. Our results highlight the importance of input-dependent forget-gate mechanisms for reliable prediction of human behavior in diverse real-world scenarios. The source code is available at \url{https://github.com/TalalWasim/MixANT}
+            We present MixANT, a novel architecture for stochastic long-term dense anticipation of human activities. While recent State Space Models (SSMs) like Mamba have shown promise through input-dependent selectivity on three key parameters, the critical forget-gate (<b>A</b> matrix) controlling temporal memory remains static. We address this limitation by introducing a mixture of experts approach that dynamically selects contextually relevant <b>A</b> matrices based on input features, enhancing representational capacity without sacrificing computational efficiency. Extensive experiments on the 50Salads, Breakfast, and Assembly101 datasets demonstrate that MixANT consistently outperforms state-of-the-art methods across all evaluation settings. Our results highlight the importance of input-dependent forget-gate mechanisms for reliable prediction of human behavior in diverse real-world scenarios.
           </p>
         </div>
       </div>
@@ -190,7 +190,7 @@
         <!-- Your image here -->
         <img src="static/images/main_figure4.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Our architecture and its components. In the MixANT architecture (a), the first $K_0$ blocks are standard Mamba blocks and the rest ($K-K_0$) are MixMamba blocks (b). Each MixMamba block contains a bi-directional MixMamba layer (c). In contrast to the standard Mamba unit (e) where $\textbf{A}$ is fixed for all input sequences, the MixMamba unit (d) contains a router that selects the relevant $\textbf{A}$ matrix depending on the input sequence.
+          Our architecture and its components. In the MixANT architecture (a), the first <span class="math">K</span><sub>0</sub> blocks are standard Mamba blocks and the rest (<span class="math">K</span>-<span class="math">K</span><sub>0</sub>) are MixMamba blocks (b). Each MixMamba block contains a bi-directional MixMamba layer (c). In contrast to the standard Mamba unit (e) where <span class="math bold">A</span> is fixed for all input sequences, the MixMamba unit (d) contains a router that selects the relevant <b>A</b> matrix depending on the input sequence.
         </h2>
       </div>
       <!-- <div class="item"> -->
